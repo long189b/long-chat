@@ -8,9 +8,21 @@
   "engines": {
     "node": ">=4.3.2"
   },
+   "scripts": {
+   "start": "node app.js",
+   "monitor": "nodemon app.js",
+   "deploy": "gcloud app deploy"
+ },
   "dependencies": {
-    "express": "^4.15.2"
-  },
+   "body-parser": "^1.18.3",
+   "express": "^4.10.2",
+   "express-ws": "^1.0.0-rc.2",
+   "jade": "^1.11.0",
+   "request": "^2.69.0",
+   "socket.io": "^1.4.8",
+   "uuid": "^3.3.2"
+ },
+  
   "devDependencies": {
     "@google-cloud/nodejs-repo-tools": "^2.3.0",
     "semistandard": "^12.0.1"
